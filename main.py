@@ -8,7 +8,7 @@ from mysql.connector import Error
 app = FastAPI()
 
 origins = ["*"]  # Change the allowed origins as needed.
-#
+# middleware 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
